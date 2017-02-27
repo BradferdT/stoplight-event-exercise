@@ -1,5 +1,11 @@
-(function() {
-  'use strict';
-
-  // YOUR CODE HERE
-})();
+$(document).ready(function(){
+$('#stopButton').on('click',function(){
+  $('#stopLight').toggleClass('stop')
+});
+$('#slowButton').on('click',function(){
+  $('#slowLight').toggleClass('slow');
+});
+$('#goButton').on('click',function(){
+  $('#goLight').toggleClass('go');
+})
+});
